@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var currentFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function () {
+              return currentFetch;
+            },
+            set: function (nextFetch) {
+              if (typeof nextFetch === 'function') {
+                currentFetch = nextFetch;
+              }
+            },
+          });
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horas Trabalhadas — Simulador de Escala de Trabalho (EC 141/2026)</title>
+    <meta name="description" content="Simule gratuitamente escalas 6x1, 5x2, 12x36 e calcule valor da hora, horas extras e adicional noturno nas etapas de 44h, 42h e 40h da EC 141/2026." />
+    <meta property="og:title" content="Horas Trabalhadas — Simulador de Escala de Trabalho (EC 141/2026)" />
+    <meta property="og:description" content="Descubra em menos de 30 segundos se sua escala respeita os limites de 42h e 40h da Emenda Constitucional 141/2026 (PEC 221/2019 e PEC 8/2025) e quanto passa a valer sua hora." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Horas Trabalhadas" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Horas Trabalhadas — Simulador e Notícias da EC 141/2026" />
+    <meta name="twitter:description" content="Simule escalas 6x1, 5x2 e 12x36 e leia as principais notícias sobre a EC 141/2026 (PEC 221/2019 e PEC 8/2025), promulgada em 16 de outubro de 2026." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Horas Trabalhadas — Simulador EC 141/2026",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "description": "Simulador gratuito de escalas de trabalho (6x1, 5x2, 12x36 e outras), valor da hora e notícias sob as regras da Emenda Constitucional nº 141/2026 (PEC 221/2019 e PEC 8/2025).",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "BRL"
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quando a jornada de 42 horas e os dois descansos semanais entram em vigor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pela EC 141/2026 (promulgada em 16/10/2026), a 1ª etapa de transição reduz o limite para 42 horas semanais com dois repousos semanais remunerados a partir de 16/12/2026 (algumas fontes citam 15/12/2026)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Meu salário mensal pode ser reduzido com a diminuição da jornada para 42h e 40h?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. A Emenda Constitucional nº 141/2026 veda expressamente a redução salarial, inclusive de pisos. Trabalhadores mensalistas mantêm o salário integral e têm o valor da hora valorizado pela mudança do divisor (de 220 para 210 e depois 200)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A escala 12x36 acabou com a EC 141/2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A escala 12x36 não foi extinta expressamente. Com 1 hora de intervalo intrajornada concedido (11h efetivas por turno), a média semanal é de 38,5 horas, respeitando até mesmo o limite final de 40h semanais em dezembro de 2027."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-[#F8FAFA] dark:bg-[#0B1517] text-slate-900 dark:text-slate-100 antialiased selection:bg-teal-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

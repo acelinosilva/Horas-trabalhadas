@@ -1,0 +1,6 @@
+{
+  "name": "Horas Trabalhadas — Simulador EC 141/2026",
+  "description": "Simulador gratuito de escalas de trabalho (6x1, 5x2, 12x36 e outras), valor da hora e remuneração sob as regras da Emenda Constitucional nº 141/2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <rect x="2" y="4" width="40" height="40" rx="10" fill="#0D5C63" />
+  <circle cx="22" cy="24" r="12.5" stroke="#F0FDFA" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="60 20" transform="rotate(-45 22 24)" />
+  <path d="M30 14L33 17L37.5 12.5" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M22 16.5V24L27.5 27" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="22" cy="24" r="2" fill="#34D399" />
+  <text x="52" y="29" fill="#0F172A" font-family="'Bricolage Grotesque', sans-serif" font-weight="700" font-size="21" letter-spacing="-0.02em">Horas Trabalhadas</text>
+</svg>
